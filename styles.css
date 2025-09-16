@@ -426,7 +426,6 @@ img {
     .parallax-content h2 {
         font-size: 1rem;
         margin-bottom: 1rem;
-
     }
 
     /*Making sure the parallax spacer doesn't lag on mobile*/
@@ -444,3 +443,28 @@ img {
 
 
 /* Making the nav bar responsive on smaller screens but maintaining the pill shape */
+@media (max-width: 600px) {
+    .nav-list {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 8px;
+        padding: 10px 0;
+        max-width: 100%;
+    }
+
+    .nav-list a {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+
+    .brand {
+        font-size: 1.2rem;
+        padding: 4px 12px;
+        margin-right: 8px;
+    }
+
+    /*this is the bit that actualy allows the horizonal scrolling*/
+    .nav-list li{
+        flex: 0 0 auto; 
+    }
+}
