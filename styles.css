@@ -4,9 +4,11 @@
 /* ============================================================ */
 
 
-
+/* ============================================================ */  
 /* ============================================================ */
 /* GLOBAL STYLES */
+/* ============================================================ */  
+
 
 html, body{
     height: 100%;
@@ -35,7 +37,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.7; 
+    /* opacity: 0.8;  */
   }
 
 /* main wrapper to hold content and for footer to be at bottom */
@@ -43,6 +45,8 @@ main {
     flex:1;
 }
 
+
+/* ============================================================ */  
 /* ============================================================ */
 /* NAVIGATION BAR STYLES */
 /* ============================================================ */
@@ -108,10 +112,11 @@ nav {
 }
 
 
-
+/* ============================================================ */  
 /* ============================================================ */
 /* PARALLAX STYLES */
 /* ============================================================ */
+
 /*Adding Parallax*/
 .parallax {
     /*Create a stacking context for the dark overlay*/
@@ -165,7 +170,7 @@ nav {
 
 /* Parallax Genereal text styles */
 .parallax-content h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 0rem;
     /*Shadow for visibility*/
@@ -173,7 +178,7 @@ nav {
 }
 
 .parallax-content h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -229,22 +234,10 @@ nav {
 
 
 /* ============================================================ */
-/* PORTRAIT FLOATER PSEUDO CLASS */
-
-.portrait {
-    margin-right: 16px;
-    margin-bottom: 8px;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    /* box shadow for glow effect --> */
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
-}
-
-/* ============================================================ */
 /* ============================================================ */
 /*  SECTION STYLES */
+/* ============================================================ */  
+
 /* Section class to hold image and text side by side for non parallax sections */
 .section{
     padding: 20px 50px;
@@ -321,10 +314,13 @@ nav {
       max-height: 320px;
     }
   }
+
+
+  /* ============================================================ */  
+/* ============================================================ */  
+/* Publication list styles */
 /* ============================================================ */  
 
-
-/* Publication list styles */
 .pub-list {
     list-style: none;
     margin: 0;
@@ -332,7 +328,7 @@ nav {
   }
   
   .pub + .pub {
-    /* Trick to add a space between publications */
+/* Trick to add a space between publications */
     margin-top: 16px;   
   }
   
@@ -371,7 +367,8 @@ nav {
 
 /* ============================================================ */
 /* ============================================================ */
-/* GENERAL STYLES */
+/* GENERAL STYLES THAT ARE USED WHEN SECTION AND PARALLAX AREN'T*/
+/* ============================================================ */  
 
 
 h1 {
@@ -401,41 +398,36 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-  }
-
-
-
-/* Stack on small screens */
-@media (max-width: 700px) {
-    .split {
-      flex-direction: column;
-      align-items: stretch;
-    }
-    .split img {
-      width: 100%;
-      height: auto;
-    }
 }
 
 
-
-/* Title class for section titles not used in parallax*/
-.title {
-text-align: center;
-margin-bottom: 12px;
-padding: 8px;
-border: 1px solid hsl(204, 100%, 50%);
-border-radius: 8px;
-background-color: hsl(193, 92%, 90%);
-}
+/* ============================================================ */  
+/* ============================================================ */  
+/* CHANGES FOR MOBILE */
+/* ============================================================ */
 
 
-/* Responsive design for small screens - stack the enclosure flex container */
-@media (max-width: 600px) {
-    .enclosure {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 12px;
-      padding: 12px;
+/*making the parallax scroll instead of fixed on mobile devices and smaller screens responsiveness*/
+@media (max-width: 768px) {
+    body::before {
+        background-attachment: scroll;
+        background-position: center top   
+    }
+    .parallax {
+        background-attachment: scroll;
+        height: 45vh;
+        min-height: 280px;
+    }
+
+    .parallax-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .parallax-content h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
     }
 }
+
+
+/* Making the nav bar responsive on smaller screens but maintaining the pill shape */
