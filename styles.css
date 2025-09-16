@@ -427,6 +427,18 @@ img {
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
+
+    /*Making sure the parallax spacer doesn't lag on mobile*/
+    .parallax-spacer{
+        background-attachment: scroll;
+        height: 10vh;
+        min-height: 80px;
+    }
+    .parallax-navigation{
+        background-attachment: scroll;
+        height: 5vh;
+        min-height: 60px;
+    }
 }
 
 
