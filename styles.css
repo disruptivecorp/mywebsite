@@ -420,12 +420,13 @@ img {
     }
 
     .parallax-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .parallax-content h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-bottom: 1rem;
+
     }
 
     /*Making sure the parallax spacer doesn't lag on mobile*/
