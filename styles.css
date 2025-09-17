@@ -125,7 +125,7 @@ nav {
     background-image: url("images/sunder-muthukumaran-unsplash.jpg");
 
     /*Set a specific height for the viewport, note the vh is for non explicit height */
-    height: 60vh;
+    height: 80vh;
 
     /*Full bleed through width*/
     width: 100vw;
@@ -210,7 +210,7 @@ nav {
 .parallax-navigation{
     position: relative;
     /*Small height spacer*/
-    height: 5vh;
+    height: 8vh;
     min-height: 60px;
     /*Full bleed through width*/
     width: 100vw;
@@ -364,6 +364,21 @@ nav {
     padding: 10px 0;
 
 }
+
+  /* ============================================================ */  
+/* ============================================================ */  
+/* Project styles */
+/* ============================================================ */  
+.project-links {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.project-links p {
+    margin: 0; 
+}
+
 
 /* ============================================================ */
 /* ============================================================ */
