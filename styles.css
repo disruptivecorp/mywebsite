@@ -419,6 +419,7 @@ img {
         min-height: 280px;
     }
 
+    /*I needed to make these way smaller for phones*/
     .parallax-content h1 {
         font-size: 2rem;
     }
