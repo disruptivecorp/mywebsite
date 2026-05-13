@@ -1,0 +1,40 @@
+/* ============================================================ */
+/* GLOBAL STYLES — entry point for all CSS in the app.           */
+/* Tailwind's three directives below are replaced at build time  */
+/* by the actual utility classes generated from our usage.       */
+/* ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================ */
+/* BASE LAYER OVERRIDES                                          */
+/* These customize Tailwind's preflight reset for our typography */
+/* and background defaults. Everything else lives in components  */
+/* via Tailwind utility classes (no per-component CSS files).    */
+/* ============================================================ */
+
+@layer base {
+  /* Body — cream background, charcoal text, sans-serif body type.     */
+  /* min-h-screen lets the footer sit at the bottom when content is    */
+  /* short, using the flex column on <body>.                            */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-cream text-ink font-sans antialiased;
+  }
+
+  /* Headings — serif, tighter line height, slightly heavier weight.   */
+  h1, h2, h3, h4 {
+    @apply font-serif tracking-tight;
+  }
+
+  /* Links — teal, underline on hover. We override per-component       */
+  /* when we need a link to look like a button.                         */
+  a {
+    @apply text-teal hover:text-teal-hover transition-colors;
+  }
+}

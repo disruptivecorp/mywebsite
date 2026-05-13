@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Alejandro Scaffa</title>
+    <!--
+      GitHub Pages SPA fallback — Rafael Pedicini's classic single-page-app
+      trick (https://github.com/rafgraph/spa-github-pages).
+
+      The problem: GitHub Pages serves static files. When someone visits
+      alejandroscaffa.com/publications directly, GH Pages looks for a file
+      at /publications/index.html, doesn't find one, and returns this 404
+      page. Without the trick, the visitor sees a 404 instead of the React
+      app's /publications route.
+
+      The fix: this script rewrites the URL to encode the path into the
+      query string, then redirects to the SPA's root index.html. A matching
+      bit of script in index.html reads the query string and restores the
+      original path via history.replaceState, so React Router sees it
+      correctly and renders /publications.
+
+      pathSegmentsToKeep = 0 because we serve from the domain root
+      (alejandroscaffa.com), not a sub-path like /repo.
+    -->
+    <script type="text/javascript">
+      var pathSegmentsToKeep = 0;
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          "//" +
+          l.hostname +
+          (l.port ? ":" + l.port : "") +
+          l.pathname
+            .split("/")
+            .slice(0, 1 + pathSegmentsToKeep)
+            .join("/") +
+          "/?/" +
+          l.pathname
+            .slice(1)
+            .split("/")
+            .slice(pathSegmentsToKeep)
+            .join("/")
+            .replace(/&/g, "~and~") +
+          (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+          l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
