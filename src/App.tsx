@@ -14,6 +14,7 @@
 // /projects so the URL remains short.
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Publications from "./pages/Publications";
 import ScaffaLab from "./pages/ScaffaLab";
@@ -23,17 +24,23 @@ import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
-    <Routes>
-      {/* All pages share the same Layout wrapper. */}
-      <Route element={<Layout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/publications" element={<Publications />} />
-        <Route path="/scaffa-lab" element={<ScaffaLab />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/people" element={<People />} />
-        {/* Catch-all for unknown URLs. */}
-        <Route path="*" element={<NotFound />} />
-      </Route>
-    </Routes>
+    <>
+      {/* Listens to route changes and scrolls the window to the top on
+          every navigation. Without this, React Router preserves the
+          previous page's scroll position. */}
+      <ScrollToTop />
+      <Routes>
+        {/* All pages share the same Layout wrapper. */}
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/publications" element={<Publications />} />
+          <Route path="/scaffa-lab" element={<ScaffaLab />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/people" element={<People />} />
+          {/* Catch-all for unknown URLs. */}
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
