@@ -84,11 +84,11 @@ export default function Projects() {
       <Section title="Other Projects">
         <p>
           A collection of software, machine learning, and computational
-          projects developed during my MS in Computer Science at
-          Northeastern University's Roux Institute. These sit outside the
-          Scaffa Lab research portfolio but share the same emphasis on
-          reproducible pipelines, instrument-agnostic abstractions, and
-          domain-aware tooling.
+          projects developed through my MS in Computer Science at
+          Northeastern University's Roux Institute and related independent
+          work. These sit outside the Scaffa Lab research portfolio but
+          share the same emphasis on reproducible pipelines,
+          instrument-agnostic abstractions, and domain-aware tooling.
         </p>
       </Section>
 
