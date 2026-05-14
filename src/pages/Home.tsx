@@ -79,15 +79,6 @@ export default function Home() {
           adding formal training in algorithms, machine learning, and
           reproducible computational analysis.
         </p>
-        
-        <p>
-          I am building the Scaffa Lab as a dry-lab-first research group
-          that develops reproducible computational workflows for studying
-          cell states. Over time, the goal is to grow into a computational
-          and experimental biology lab that connects image analysis,
-          single-cell transcriptomics, and experimental cell biology and
-          biochemistry.
-        </p>
         </div>
       </Section>
 
