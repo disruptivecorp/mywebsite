@@ -56,32 +56,38 @@ export default function Home() {
         {/* Three paragraphs with even vertical spacing between them.
             space-y-4 = 1rem between sibling elements. */}
         <div className="space-y-4">
-          <p>
-            I am the incoming Assistant Professor of Biology at Grinnell
-            College for the 2026–2027 academic year, where I will teach
-            pharmacology, biochemistry, and computational biology, and
-            lead the Scaffa Lab. My research focuses on cellular
-            senescence and stress responses across biological contexts,
-            using computational and quantitative approaches to study how
-            cell states differ across tissues, diseases, and
-            microenvironments.
-          </p>
-          <p>
-            I earned my PhD in Molecular Pharmacology and Physiology from
-            Brown University, completed postdoctoral training at Merck
-            Research Laboratories, and completed an MS in Computer Science
-            at Northeastern University's Roux Institute. My background
-            brings together wet-lab biochemistry, cancer biology, senescence
-            biology, and computational biology.
-          </p>
-          <p>
-            I am building the Scaffa Lab as a dry-lab-first research group,
-            with the long-term goal of growing into an integrated wet-dry
-            program. Our work develops reproducible computational workflows
-            for studying cell states, with the goal of connecting image
-            analysis, single-cell transcriptomics, and experimental
-            biochemistry.
-          </p>
+         <p>
+          I am the incoming Assistant Professor of Biology at Grinnell
+          College for the 2026–2027 academic year, where I will teach
+          pharmacology, biochemistry, and computational biology, and
+          lead the Scaffa Lab. My research focuses on cellular
+          senescence and stress responses across biological contexts,
+          using computational and quantitative approaches to study how
+          cell states differ across tissues, diseases, and
+          microenvironments.
+        </p>
+        
+        <p>
+          I earned my PhD in Molecular Pharmacology and Physiology from
+          Brown University, where I studied hyperoxia-induced senescence,
+          metabolism, and lung development in the laboratory of Phyllis
+          Dennery, MD. I then completed postdoctoral training at Merck
+          Research Laboratories in Boston, working on cancer-associated
+          fibroblasts, senescence, and the tumor microenvironment in
+          pancreatic ductal adenocarcinoma. More recently, I completed an
+          MS in Computer Science at Northeastern University's Roux Institute,
+          adding formal training in algorithms, machine learning, and
+          reproducible computational analysis.
+        </p>
+        
+        <p>
+          I am building the Scaffa Lab as a dry-lab-first research group
+          that develops reproducible computational workflows for studying
+          cell states. Over time, the goal is to grow into a computational
+          and experimental biology lab that connects image analysis,
+          single-cell transcriptomics, and experimental cell biology and
+          biochemistry.
+        </p>
         </div>
       </Section>
 
@@ -92,13 +98,15 @@ export default function Home() {
       {/* document outline reads correctly to screen readers and search.   */}
       {/* ---------------------------------------------------------------- */}
       <Section title="Teaching">
-        <p>
-          Starting Fall 2026 at Grinnell, I will teach courses that
-          connect molecular biology, pharmacology, biochemistry, and
-          computation. My teaching emphasizes mechanistic reasoning,
-          quantitative thinking, and helping students connect molecular
-          concepts to real biological and biomedical problems.
-        </p>
+      <p>
+        Starting Fall 2026 at Grinnell, I will teach pharmacology,
+        biochemistry, and computational biology. My teaching focuses on
+        scientific thinking: helping students move beyond “what is the
+        answer?” toward “how do we know?” and “what would happen if?”
+        I emphasize mechanistic reasoning, systems thinking, and helping
+        students connect molecular concepts to real biological and
+        biomedical problems.
+      </p>
 
         {/* "Grinnell College" stays as the single institution header
             (h3). Each semester is an h4 subheading underneath, with
@@ -134,29 +142,29 @@ export default function Home() {
       {/* ---------------------------------------------------------------- */}
       <Section title="Research">
         <div className="space-y-4">
-          <p>
-            My research asks why cellular stress responses, especially
-            cellular senescence, produce different functional outcomes
-            across biological contexts. I am interested in why cells
-            exposed to similar stressors can differ in metabolism,
-            secretory activity, inflammatory signaling, survival, and
-            vulnerability to intervention.
-          </p>
-          <p>
-            The long-term focus of the Scaffa Lab is senescence
-            heterogeneity. The lab approaches this question through
-            biochemical resource profiles, recurring patterns in how cells
-            allocate energetic, redox, damage-repair, and secretory
-            capacity under persistent stress.
-          </p>
-          <p>
-            Current work in the Scaffa Lab is dry-lab-first and focuses on
-            building reproducible computational workflows tied to
-            publishable biological questions. These include single-cell
-            RNA-seq analysis of senescent fibroblast states, quantitative
-            image-based phenotyping, and computational pathology pipelines
-            developed through collaborative tissue-image datasets.
-          </p>
+        <p>
+          My research focuses on cellular senescence and stress responses.
+          The central question motivating the Scaffa Lab is why cells exposed
+          to similar stressors can differ in metabolism, secretory activity,
+          inflammatory signaling, survival, and vulnerability to intervention.
+          More at the Scaffa Lab page.
+        </p>
+        
+        <p>
+          The long-term focus of the Scaffa Lab is senescence heterogeneity.
+          We approach this through the idea of biochemical resource profiles:
+          recurring patterns in how cells allocate energetic, redox,
+          damage-repair, and secretory capacity under persistent stress.
+        </p>
+        
+        <p>
+          Current work in the Scaffa Lab is dry-lab-first and centered on
+          reproducible computational workflows tied to publishable biological
+          questions. These include single-cell RNA-seq analysis of senescent
+          fibroblast states, quantitative image-based phenotyping of in vitro
+          cell models, and computational pathology pipelines built from
+          tissue images annotated by domain experts.
+        </p>
           <p>
             More at the{" "}
             <Link to="/scaffa-lab" className="font-medium">
@@ -173,7 +181,7 @@ export default function Home() {
       {/* social icons. The CV access lives under the portrait in Section   */}
       {/* 1; this card does not have CV buttons.                            */}
       {/* ---------------------------------------------------------------- */}
-      <Section title="Contact" id="contact">
+      <Section title="Contact and Collaboration" id="contact">
         {/* Update the email below to your Grinnell address once it's
             issued. The Northeastern address stays here as a fallback. */}
         <p>
@@ -182,14 +190,12 @@ export default function Home() {
             scaffa.a@northeastern.edu
           </a>
         </p>
-        <p className="mt-3">Based in Grinnell, Iowa.</p>
-
         {/* Collaboration paragraph + technical areas. Reads as a clear
             "here's what to email me about" statement, framed around
             research, teaching, and the methods the lab uses. */}
         <p className="mt-4">
-          I welcome conversations about research, teaching, and
-          collaboration at the intersection of cellular senescence,
+          I am happy to hear from people interested in research, teaching,
+          or collaboration at the intersection of cellular senescence,
           computational biology, and quantitative image analysis. I am
           especially interested in projects involving cell-state
           heterogeneity, histology image analysis, single-cell RNA-seq,
