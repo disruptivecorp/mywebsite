@@ -65,9 +65,10 @@ export default function ScaffaLab() {
           </p>
           <p>
             The Scaffa Lab is currently being built as a dry-lab-first
-            research group, with the goal of developing reproducible
-            computational infrastructure that supports collaborative
-            projects now and future integrated wet-dry studies. During
+            (computational) research group, with the goal of developing
+            reproducible computational infrastructure that supports
+            collaborative projects now and future computational and
+            experimental studies. During
             this phase, the lab prioritizes analysis pipelines tied to
             publishable biological questions rather than building tools
             in isolation.
@@ -84,8 +85,7 @@ export default function ScaffaLab() {
       <Section title="Approach">
         <div className="space-y-4">
           <p>
-            The lab is developing three connected methodological
-            directions.
+            The lab is developing three connected approaches.
           </p>
           <p>
             <strong>Single-cell transcriptomics.</strong> We use publicly
@@ -134,8 +134,9 @@ export default function ScaffaLab() {
         <div className="mt-4 space-y-4">
           <p>
             The Scaffa Lab's first active project establishes a
-            reproducible computational pathology workflow using a
-            collaborative basal cell carcinoma dataset. Although the
+            reproducible computational pathology workflow using basal
+            cell carcinoma whole-slide images annotated by clinical
+            collaborators. Although the
             current dataset is basal cell carcinoma, the broader goal
             is to build a generalizable tissue-image analysis pipeline
             that can be adapted to other biological contexts, including
@@ -144,7 +145,7 @@ export default function ScaffaLab() {
             spatial organization, and other image-derived features of
             fibroblast-like cells in the tumor microenvironment are
             associated with tumor-level outcomes, such as immune cell
-            infiltration and other dermatopathologist-defined features.
+            infiltration and other expert-defined tumor features.
           </p>
           <p>
             The pipeline converts annotated H&amp;E whole-slide images
@@ -210,10 +211,10 @@ export default function ScaffaLab() {
       <Section title="Future Directions">
         <div className="space-y-4">
           <p>
-            The long-term goal of the Scaffa Lab is to grow from a
-            dry-lab-first group into an integrated wet-dry research
-            program for studying senescence heterogeneity in fibroblasts
-            and other stress-responsive cell populations.
+            The long-term goal of the Scaffa Lab is to grow into a
+            computational and experimental biology program for studying
+            senescence heterogeneity in fibroblasts and other
+            stress-responsive cell populations.
           </p>
           <p>
             The lab's central strategy is to use single-cell RNA-seq
@@ -226,8 +227,8 @@ export default function ScaffaLab() {
             stress-resistant cell states.
           </p>
           <p>
-            As the lab grows, tissue-based analysis using collaborative
-            H&amp;E, IHC, IF, and single-cell datasets will help connect
+            As the lab grows, tissue-based analysis using H&amp;E, IHC,
+            IF, and single-cell datasets will help connect
             these experimentally defined cell states to real tissue
             contexts. The current BCC project contributes to this
             broader direction by building computational pathology
@@ -238,11 +239,11 @@ export default function ScaffaLab() {
       </Section>
 
       {/* ---------------------------------------------------------------- */}
-      {/* SECTION 5 — Join the Lab                                          */}
+      {/* SECTION 5 — Students and Collaborations                           */}
       {/* Outreach for students + external collaborators. Closes with a    */}
       {/* pointer to /people for the lab directory.                         */}
       {/* ---------------------------------------------------------------- */}
-      <Section title="Join the Lab">
+      <Section title="Students and Collaborations">
         <div className="space-y-4">
           <p>
             Students interested in the Scaffa Lab can contribute to
@@ -258,9 +259,10 @@ export default function ScaffaLab() {
             I also welcome collaborations with groups studying cellular
             senescence, fibroblast biology, tumor microenvironment
             biology, histology image analysis, IHC/IF imaging, or
-            single-cell RNA-seq. Collaborative datasets are central to
-            the lab's dry-lab-first model and to its long-term
-            development as an integrated wet-dry research group.
+            single-cell RNA-seq. These collaborations are especially
+            useful when biological questions can be paired with existing
+            datasets, annotated tissue images, or tractable experimental
+            systems.
           </p>
           <p>
             Lab members and collaborators are listed on the{" "}
