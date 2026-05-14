@@ -104,15 +104,9 @@ function PersonCard({
 export default function People() {
   return (
     <Section title="People" wideBody>
-      <p className="mb-10">
-        The Scaffa Lab brings together students and collaborators working
-        across cellular senescence, computational biology, and
-        quantitative image analysis.
-      </p>
-
-      {/* ----- Scaffa Lab People ----- */}
+      {/* ----- Lab Members ----- */}
       <h3 className="text-xl font-semibold text-ink md:text-2xl">
-        Scaffa Lab People
+        Lab Members
       </h3>
       {/* flex-wrap + justify-center centers any number of cards in the
           row. On wide screens the three cards sit side by side; below
