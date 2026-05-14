@@ -147,7 +147,11 @@ export default function Home() {
           The central question motivating the Scaffa Lab is why cells exposed
           to similar stressors can differ in metabolism, secretory activity,
           inflammatory signaling, survival, and vulnerability to intervention.
-          More at the Scaffa Lab page.
+          More at the{" "}
+            <Link to="/scaffa-lab" className="font-medium">
+              Scaffa Lab
+            </Link>{" "}
+          page.
         </p>
         
         <p>
@@ -165,13 +169,6 @@ export default function Home() {
           cell models, and computational pathology pipelines built from
           tissue images annotated by domain experts.
         </p>
-          <p>
-            More at the{" "}
-            <Link to="/scaffa-lab" className="font-medium">
-              Scaffa Lab
-            </Link>{" "}
-            page.
-          </p>
         </div>
       </Section>
 
