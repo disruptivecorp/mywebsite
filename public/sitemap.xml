@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://alejandroscaffa.com/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://alejandroscaffa.com/scaffa-lab</loc>
+    <lastmod>2026-05-22</lastmod>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://alejandroscaffa.com/publications</loc>
+    <lastmod>2026-05-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://alejandroscaffa.com/people</loc>
+    <lastmod>2026-05-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://alejandroscaffa.com/projects</loc>
+    <lastmod>2026-05-22</lastmod>
+    <priority>0.4</priority>
+  </url>
+</urlset>
