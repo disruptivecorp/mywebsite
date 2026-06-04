@@ -188,8 +188,7 @@ export default function ScaffaLab() {
             <strong>Project lead.</strong> Alejandro Scaffa, PhD.
           </p>
           <p>
-            <strong>Graduate students.</strong> Harshil Bhojwani and Khue
-            "Cherry" Pham, Roux Institute, Northeastern University.
+            <strong>Graduate students.</strong> Harshil Bhojwani, Roux Institute, Northeastern University.
           </p>
           <p>
             <strong>Senior collaborators.</strong> Michael Wan, PhD,
