@@ -57,7 +57,7 @@ export default function Home() {
             space-y-4 = 1rem between sibling elements. */}
         <div className="space-y-4">
          <p>
-          I am the incoming Assistant Professor of Biology at Grinnell
+          I am an Assistant Professor of Biology at Grinnell
           College for the 2026–2027 academic year, where I will teach
           pharmacology, biochemistry, and computational biology, and
           lead the Scaffa Lab. My research focuses on cellular
@@ -90,9 +90,7 @@ export default function Home() {
       {/* ---------------------------------------------------------------- */}
       <Section title="Teaching">
       <p>
-        Starting Fall 2026 at Grinnell, I will teach pharmacology,
-        biochemistry, and computational biology. My teaching focuses on
-        scientific thinking: helping students move beyond “what is the
+        My teaching focuses on scientific thinking: helping students move beyond “what is the
         answer?” toward “how do we know?” and “what would happen if?”
         I emphasize mechanistic reasoning, systems thinking, and helping
         students connect molecular concepts to real biological and
