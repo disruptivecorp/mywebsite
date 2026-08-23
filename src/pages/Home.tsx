@@ -172,8 +172,8 @@ export default function Home() {
             issued. The Northeastern address stays here as a fallback. */}
         <p>
           Email:{" "}
-          <a href="mailto:scaffa.a@northeastern.edu">
-            scaffa.a@northeastern.edu
+          <a href="mailto:scaffaa@grinnell.edu">
+            scaffaa@grinnell.edu
           </a>
         </p>
         {/* Collaboration paragraph + technical areas. Reads as a clear
