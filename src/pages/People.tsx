@@ -115,7 +115,7 @@ export default function People() {
         <PersonCard
           name="Alejandro Scaffa, PhD"
           roleTitle="Principal Investigator"
-          position="Incoming Assistant Professor of Biology"
+          position="Assistant Professor of Biology"
           institution="Grinnell College"
           image="/images/portrait.jpg"
           imageAlt="Portrait of Alejandro Scaffa"
